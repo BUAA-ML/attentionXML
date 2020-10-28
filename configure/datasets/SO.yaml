@@ -1,0 +1,22 @@
+name: EUR-Lex
+
+train:
+  texts: data/SO/train_texts.npy
+  labels: data/SO/train_labels.npy
+
+valid:
+  size: 200
+
+test:
+  texts: data/SO/test_texts.npy
+
+embedding:
+  emb_init: data/SO/emb_init.npy
+
+output:
+  res: results
+
+labels_binarizer: data/SO/labels_binarizer
+
+model:
+  emb_size: 300
