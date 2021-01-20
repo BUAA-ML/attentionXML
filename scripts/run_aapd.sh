@@ -8,5 +8,5 @@ MODEL=AttentionXML
 
 python evaluation.py \
 --results results/$MODEL-$DATA-Ensemble-labels.npy \
---targets data/$DATA/test_labels.npy \
---train-labels data/$DATA/train_labels.npy
+--targets ../../datasets/multiLabel_text_classification/$DATA/test_labels.npy \
+--train-labels ../../datasets/multiLabel_text_classification/$DATA/train_labels.npy
