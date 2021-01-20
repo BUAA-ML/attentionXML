@@ -1,4 +1,4 @@
-name: EUR-Lex
+name: AAPD
 
 train:
   texts: ../../datasets/multiLabel_text_classification/AAPD/train_texts.npy

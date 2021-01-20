@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DATA=AAPD
-MODEL=AttentionXML
+MODEL=AttentionXML-aapd
 
 ./scripts/run_preprocess.sh $DATA
 ./scripts/run_xml.sh $DATA $MODEL
