@@ -1,22 +1,22 @@
 name: EUR-Lex
 
 train:
-  texts: data/AAPD/train_texts.npy
-  labels: data/AAPD/train_labels.npy
+  texts: ../../datasets/multiLabel_text_classification/AAPD/train_texts.npy
+  labels: ../../datasets/multiLabel_text_classification/AAPD/train_labels.npy
 
 valid:
   size: 200
 
 test:
-  texts: data/AAPD/test_texts.npy
+  texts: ../../datasets/multiLabel_text_classification/AAPD/test_texts.npy
 
 embedding:
-  emb_init: data/AAPD/emb_init.npy
+  emb_init: ../../datasets/multiLabel_text_classification/AAPD/emb_init.npy
 
 output:
   res: results
 
-labels_binarizer: data/AAPD/labels_binarizer
+labels_binarizer: ../../datasets/multiLabel_text_classification/AAPD/labels_binarizer
 
 model:
   emb_size: 300
