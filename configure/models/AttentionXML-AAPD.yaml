@@ -1,4 +1,4 @@
-name: AttentionXML-aapd
+name: AttentionXML
 
 model:
   hidden_size: 256
