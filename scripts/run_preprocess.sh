@@ -10,12 +10,12 @@
 #  TEST_TEXT="--text-path ../datasets/$1/test_raw_texts.txt --tokenized-path data/$1/test_texts.txt"
 #fi
 
-TRAIN_TEXT="--text-path ../../datasets/AAPD/train_texts.txt"
-TEST_TEXT="--text-path ../../datasets/AAPD/test_texts.txt"
+TRAIN_TEXT="--text-path ../datasets/AAPD/train_texts.txt"
+TEST_TEXT="--text-path ../datasets/AAPD/test_texts.txt"
 
 if [ ! -f data/$1/train_texts.npy ]; then
-  python preprocess.py $TRAIN_TEXT --label-path ../../datasets/AAPD/train_labels.txt #--vocab-path data/$1/vocab.npy --emb-path data/$1/emb_init.npy --w2v-model data/glove.840B.300d.gensim
+  python preprocess.py $TRAIN_TEXT --label-path ../datasets/AAPD/train_labels.txt #--vocab-path data/$1/vocab.npy --emb-path data/$1/emb_init.npy --w2v-model data/glove.840B.300d.gensim
 fi
 if [ ! -f data/$1/test_texts.npy ]; then
-  python preprocess.py $TEST_TEXT --label-path ../../datasets/AAPD/test_labels.txt #--vocab-path data/$1/vocab.npy
+  python preprocess.py $TEST_TEXT --label-path ../datasets/AAPD/test_labels.txt #--vocab-path data/$1/vocab.npy
 fi
